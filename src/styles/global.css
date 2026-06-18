@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+.prose {
+  font-family: inherit;
+}
+
+.prose * {
+  font-family: inherit;
+}
