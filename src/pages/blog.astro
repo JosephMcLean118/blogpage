@@ -3,14 +3,15 @@ import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 
 const blogs = await getCollection("blogs");
-console.log(blogs);
 ---
 
 <Layout title="blog">
   {
     blogs.map((blog) => (
       <a href={`/blog/${blog.id}`}>
-        <h2>{blog.data.title}</h2>
+        <h2>
+          {blog.data.title} - {blog.data.date}
+        </h2>
       </a>
     ))
   }
