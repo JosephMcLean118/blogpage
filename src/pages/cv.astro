@@ -5,10 +5,12 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="CV">
   <h2 class="text-2xl font-semibold mb-5">CV</h2>
   <a
-    href="/Joseph-McLean-CV.pdf"
+    href={`${import.meta.env.BASE_URL}/Joseph-McLean-CV.pdf`}
     class="text-blue-500 hover:underline mt-4 inline-block"
   >
     View or download CV
   </a>
-  <iframe src={`${import.meta.env.BASE_URL}/Joseph-McLean-CV.pdf`}></iframe>
+  <iframe
+    src={`${import.meta.env.BASE_URL}/Joseph-McLean-CV.pdf`}
+    class="w-full h-screen mt-4"></iframe>
 </Layout>
