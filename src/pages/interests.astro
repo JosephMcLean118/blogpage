@@ -23,7 +23,35 @@ import Layout from "../layouts/Layout.astro";
       class="object-scale-down w-1/4 h-auto display:inline"
     />
   </div>
+  <h3 class="text-xl font-semibold mt-5">My Three Cats</h3>
+  <div class="flex items-start gap-12">
+    <div class="text-center">
+      <p>Marvin</p>
+      <img
+        src={`${import.meta.env.BASE_URL}images/marvin.jpg`}
+        alt="photo of my cat Marvin"
+        class="object-scale-down w-34 h-auto inline"
+      />
+    </div>
 
+    <div class="text-center w-auto">
+      <p>Phoebe</p>
+      <img
+        src={`${import.meta.env.BASE_URL}images/pheobe.jpg`}
+        alt="photo of my cat Phoebe"
+        class="object-scale-down w-34 h-auto inline"
+      />
+    </div>
+
+    <div class="text-center">
+      <p>Leo</p>
+      <img
+        src={`${import.meta.env.BASE_URL}images/leo.jpg`}
+        alt="photo of my cat Leo"
+        class="object-scale-down w-34 h-auto inline"
+      />
+    </div>
+  </div>
   <h3 class="text-xl font-semibold mt-5">Maths</h3>
   <div class="flex items-start gap-12">
     <p class="text-slate-700 max-w-1/3 mb-2">
@@ -33,7 +61,6 @@ import Layout from "../layouts/Layout.astro";
       dataprocessing or linear algebra.
     </p>
   </div>
-
   <h3 class="text-xl font-semibold mt-5">Music</h3>
   <div class="flex items-start gap-12">
     <p class="text-slate-700 max-w-1/3 mb-2">
