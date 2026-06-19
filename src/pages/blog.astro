@@ -8,7 +8,7 @@ const blogs = await getCollection("blogs");
 <Layout title="blog">
   {
     blogs.map((blog) => (
-      <a href={`/blog/${blog.id}`}>
+      <a href={`${import.meta.env.BASE_URL}blog/${blog.id}`} class="underline">
         <h2>
           {blog.data.title} - {blog.data.date}
         </h2>
